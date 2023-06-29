@@ -1,0 +1,287 @@
+/* {
+     font-family: 'Fondamento', cursive; 
+} */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    /* background-color: #d3f0cc; */
+    background-color: #fff;
+}
+.section{
+    margin-bottom: 10px;
+}
+/****************************       contact-info-section      **********************************/
+#contact-info{
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #e2e6cd;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1a0802;
+}
+.contact-info-left, .contact-info-right{
+    display: flex;
+    gap: 25px;
+}
+.contact-info-left{
+    padding-left: 20px;
+}
+.contact-info-right{
+    padding-right: 20px;
+}
+#currency-list, #language-list{
+    background-color: #e2e6cd;
+    width: 20px;
+    outline: none;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 10px; */
+}
+.social-media{
+    display: flex;
+    gap: 5px;
+}
+/****************************       nav-section      **********************************/
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo p{
+    font-family: 'Fondamento', cursive;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #EA5211;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+#nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    border-bottom: 2px solid #dd3400;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: #1a0802; */
+}
+.navbar{
+    display: flex;
+}
+.nav-items, .nav-checkout{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    /* color: #1a0802; */
+}
+ul li div a{
+    text-decoration: none;
+    color: #023d02;
+}
+.nav-btns{
+    padding-right: 20px;
+}
+.btn{
+    padding: 5px;
+    border: 1px solid white;
+    background-color: #05b505;
+    color: white;
+}
+/*******************************       header-section      **********************************/
+#header-section{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px groove #dd3400;
+    
+}
+.header-text{
+    padding-left: 20px;
+}
+.caption{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #dd3400;
+    /* margin: 0px; */
+}
+.restaurant-address{
+    text-align: center;
+}
+.searchItem{
+    width: 25%;
+    height: 20px;
+}
+input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.restaurant-btn{
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: #05b505;
+    color: white;
+}
+.header-img{
+    padding-right: 20px;
+}
+/***********************************       category-section      **********************************/
+#category-section{
+    /* background-color: #df7554; */
+    width: 90%;
+    border-bottom: 2px groove #dd3400;
+    padding-bottom: 30px;
+}
+#category-section h3{
+    text-align: center;
+    font-size: 2em;
+}
+.browse-list{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+#category-section .browse-list{
+    padding-bottom: 30px;
+}
+.img-container{
+   display: inline-block;
+   position: relative;
+}
+.link{
+    text-decoration: none; 
+    color: #fff;
+}
+.img-container img{
+    display: block;
+    width: 350px;
+    height: 250px;
+    /* filter: blur(3px); */
+    /* border-radius: 10%; */
+    border: 5px solid #FFF;
+}
+.img-container:hover img{
+    filter: blur(3px);
+    cursor: pointer;
+    border: 5px solid rgb(254, 98, 0);
+}
+.img-container:hover .text-overlay{
+    font-size: 2.5em;
+    /* color: #EA5211; */
+    color: #fff;
+    cursor: pointer;
+    visibility: visible;
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Fondamento', cursive;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+}
+/****************************       Menu-section      **********************************/
+#menu{
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/* .menu-section{
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+} */
+.menu-section h2, h4{
+    text-align: center;
+}
+.menu-section h4{
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+.menu-section h2{
+    font-size: 3em;
+    margin-top: 0px;
+}
+.menu-section .browse-list{
+    padding-bottom: 50px;
+}
+.hidden{
+    display: none;
+}
+.breakfast-container{
+    display: inline-block;
+    position: relative;
+}
+.breakfast-container img{
+    display: block;
+    width: 350px;
+    height: 250px;
+    /* filter: blur(3px); */
+    /* border-radius: 10%; */
+    border: 5px solid #FFF;
+}
+.price-details{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    text-align: center;
+    width: 200px;
+    display: block;
+    border-radius: 20px;
+    /* background-color: #fad0be; */
+    background-color: #fff;
+    border: 2px solid #dd3400;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.price-details .price{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin-top: 5px;
+}
+.price-details .breakfast-title{
+    display: block;
+    margin: 5px;
+    font-family: 'Fondamento', cursive;
+    font-size: 1.5em;
+}
+/* .price-details p{
+    margin: 5px;
+} */
+.option-btn{
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 15px;
+    border-radius: 20px;
+    height: 30px;
+}
+.option-btn:hover{
+    background-color: #dd3400;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+#menu .menu-section #nav-list{
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+}
+#menu .menu-section #nav-list .navbar .nav-items .link{
+    color: #000;
+}

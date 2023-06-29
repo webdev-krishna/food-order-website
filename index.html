@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/9b9aa74e9b.js" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- contact-info section -->
+        <div id="contact-info" class="section">
+            <div class="contact-info-left">
+                <div>
+                    <i class="fa-solid fa-phone" style="color: #955029;"></i><span> +91-9876543210</span>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-envelope" style="color: #955029;"></i><span> spiceflavors.in@gmail.com</span>
+                </div>    
+            </div>
+            <div class="contact-info-right">
+                <div>
+                    <i class="fa-solid fa-language" style="color: #955029;"></i>
+                    <label for="language-list">languages</label>
+                    <select id="language-list">
+                        <option value="" selected disabled hidden></option>
+                        <option value="English">English</option>
+                        <option value="Telugu">Telugu</option>
+                    </select>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="color: #955029;"></i>
+                    <!-- <span>currency</span> -->
+                    <label for="currency-list">Currency</label>
+                    <select id="currency-list">
+                        <option value="" selected disabled hidden></option>
+                        <option value="Ruppee">Ruppee</option>
+                        <option value="Dollar">Dollar</option>
+                    </select>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook" style="color: #955029;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #955029;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #955029;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #955029;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- nav-list section -->
+        <div id="nav-list" class="section">
+            <div class="logo">
+                <img src="/designs/logo.png" alt="logo"><p>FlavorSpice</p>
+            </div>
+            <div class="navbar">
+                <ul class="nav-items">
+                    <li><div><a href="#"> Home</a></div></li>
+                    <li><div><a href="#"> Menu</a></div></li>
+                    <li><div><a href="#"> Become Partner</a></div></li>
+                    <li><div><a href="#"> Blog</a></div></li>
+                    <li><div><a href="#"> More</a></div></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-checkout">
+                    <li><div><i class="fa-solid fa-cart-shopping" style="color: #035e03;"></i><a href="#"> Cart</a></div></li>
+                    <li><div><i class="fa-solid fa-heart" style="color: #035e03;"></i><a href="#"> wishlist</a></div></li>
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <button class="btn">Signup</button>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+        <!-- header-section  -->
+        <div id="header-section" class="section">
+            <div class="header-text">
+                <h2 class="caption">"Embark on a Flavorful Journey through the Tastes of India"</h2>
+                <div class="restaurant-address">
+                    <input type="text" id="restaurant" placeholder="Enter the address.." class="searchItem">
+                    <button class="btn restaurant-btn" onclick="search()">Find Your Fav. Restaurant</button>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="/designs/biryani.png" alt="biryani">
+            </div>
+        </div>
+        <!-- category-section -->
+        <div id="category-section" class="section">
+            <h3>Browse by Categories</h3>
+            <div class="browse-list">
+                <div class="img-container">
+                    <img src="/designs/starter.jpg" alt="Apetizers">
+                    <div class="text-overlay"><a href="#starters" class="link" onclick="showHiddenStarters()">Starters</a></div>
+                </div>
+                <div class="img-container">
+                    <img src="/designs/tomato-soup.jpg" alt="soups">
+                    <div class="text-overlay"><a href="#soups" class="link" onclick="showHiddenSoups()">Soups</a></div>
+                </div>
+                <div class="img-container">
+                    <img src="/designs/salads.jpg" alt="Salads">
+                    <div class="text-overlay"><a href="#salads" class="link" onclick="showHiddenSalads()">Salads</a></div>
+                </div>
+                
+            </div>
+            <div class="browse-list">
+                <div class="img-container">
+                    <img src="/designs/entree.jpg" alt="Entree">
+                    <div class="text-overlay">Entree</div>
+                </div>
+                <div class="img-container">
+                    <img src="/designs/desserts.jpg" alt="Desserts">
+                    <div class="text-overlay">Desserts</div>
+                </div>
+                <div class="img-container">
+                    <img src="/designs/sweets.jpg" alt="Sweets">
+                    <div class="text-overlay">Sweets</div>
+                </div>
+            </div>
+        </div>
+        <!-- menu-section -->
+        <div id="menu" class="section">
+            <div class="menu-section hidden" id="starters">
+                <h4>Discover</h4>
+                <h2>Our Menu</h2>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section hidden" id="soups">
+                <h4>Discover</h4>
+                <h2>Our Menu</h2>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section hidden" id="salads">
+                <h4>Discover</h4>
+                <h2>Our Menu</h2>
+                <div id="nav-list" class="section">
+                    <div class="navbar">
+                        <ul class="nav-items">
+                            <li><div><a href="#starters" class="link" onclick="showHiddenStarters()"> Starters</a></div></li>
+                            <li><div><a href="#soups" class="link" onclick="showHiddenSoups()"> Soups</a></div></li>
+                            <li><div><a href="#salads" class="link" onclick="showHiddenSalads()"> Salads</a></div></li>
+                            <li><div><a href="#entree" class="link" onclick="showHiddenEntree()"> Entree</a></div></li>
+                            <li><div><a href="#desserts" class="link" onclick="showHiddenDesserts()"> Desserts</a></div></li>
+                            <li><div><a href="#sweets" class="link" onclick="showHiddenSweets()"> Sweets</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-list">
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                    <div class="breakfast-container">
+                        <img src="/designs/menu/breakfast/dosa.jpg" alt="dosa">
+                        <div class="price-details">
+                            <p class="price">Price: $5</p>
+                            <p class="breakfast-title">Masala Dosa</p>
+                            <button class="option-btn">Select option</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<!-- <div>
+    <ul>
+        <li><a href="#">Starters</a></li>
+        <li><a href="#">soups</a></li>
+        <li><a href="#">Salads</a></li>
+        <li><a href="#">Entree</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Sweets</a></li>
+    </ul>
+</div> -->
